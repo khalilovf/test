@@ -1,0 +1,117 @@
+{
+  "uid" : "5c5ac25cde8aeab1",
+  "name" : "test_post_create_user[https://reqres.in-/api/users-{\"name\": \"dows\",\"job\": \"fuuu\"}]",
+  "fullName" : "tests.test_smoke_suit.TestSmokeSuite#test_post_create_user",
+  "historyId" : "1b5d5a0cbae184398f6cbed308f02024",
+  "time" : {
+    "start" : 1570091199863,
+    "stop" : 1570091200560,
+    "duration" : 697
+  },
+  "status" : "skipped",
+  "statusMessage" : "AssertionError: assert '109' == None\n +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\n +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get",
+  "statusTrace" : "self = <tests.test_smoke_suit.TestSmokeSuite object at 0x03AD9570>\nurl = 'https://reqres.in', path = '/api/users'\ntest_data = '{\"name\": \"dows\",\"job\": \"fuuu\"}'\n\n    @pytest.mark.parametrize('url, path, test_data', [(test_host, users_path, '{\"name\": \"dows\",\"job\": \"fuuu\"}')], scope=\"session\")\n    @allure.testcase('create user and find him')\n    @pytest.mark.xfail(reason='service is not creating users, so they cant be found')\n    def test_post_create_user(self, url, path, test_data):\n        with allure.step('create user'):\n            create_user_result_json, request = api_sender(url, 201, 'POST', path, test_data)\n            created_user_id = create_user_result_json.get('id')\n        with allure.step('find created user with id: ' + created_user_id):\n            find_created_user_json, request2 = api_sender(url, 404, 'GET', path + '/' + created_user_id)  # 404 - its ok\n>           assert created_user_id == find_created_user_json.get('id')\nE           AssertionError: assert '109' == None\nE            +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\nE            +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get\n\ntest_smoke_suit.py:41: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "AssertionError: assert '109' == None\n +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\n +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get",
+    "statusTrace" : "self = <tests.test_smoke_suit.TestSmokeSuite object at 0x03AD9570>\nurl = 'https://reqres.in', path = '/api/users'\ntest_data = '{\"name\": \"dows\",\"job\": \"fuuu\"}'\n\n    @pytest.mark.parametrize('url, path, test_data', [(test_host, users_path, '{\"name\": \"dows\",\"job\": \"fuuu\"}')], scope=\"session\")\n    @allure.testcase('create user and find him')\n    @pytest.mark.xfail(reason='service is not creating users, so they cant be found')\n    def test_post_create_user(self, url, path, test_data):\n        with allure.step('create user'):\n            create_user_result_json, request = api_sender(url, 201, 'POST', path, test_data)\n            created_user_id = create_user_result_json.get('id')\n        with allure.step('find created user with id: ' + created_user_id):\n            find_created_user_json, request2 = api_sender(url, 404, 'GET', path + '/' + created_user_id)  # 404 - its ok\n>           assert created_user_id == find_created_user_json.get('id')\nE           AssertionError: assert '109' == None\nE            +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\nE            +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get\n\ntest_smoke_suit.py:41: AssertionError",
+    "steps" : [ {
+      "name" : "create user",
+      "time" : {
+        "start" : 1570091199863,
+        "stop" : 1570091200208,
+        "duration" : 345
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "find created user with id: 109",
+      "time" : {
+        "start" : 1570091200209,
+        "stop" : 1570091200560,
+        "duration" : 351
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '109' == None\n +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\n +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get\n",
+      "statusTrace" : "  File \"c:\\users\\t.khalilov\\pycharmprojects\\piano\\tests\\test_smoke_suit.py\", line 41, in test_post_create_user\n    assert created_user_id == find_created_user_json.get('id')\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_smoke_suit"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSmokeSuite"
+  }, {
+    "name" : "host",
+    "value" : "nb0579"
+  }, {
+    "name" : "thread",
+    "value" : "22996-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_smoke_suit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "path",
+    "value" : "'/api/users'"
+  }, {
+    "name" : "test_data",
+    "value" : "'{\"name\": \"dows\",\"job\": \"fuuu\"}'"
+  }, {
+    "name" : "url",
+    "value" : "'https://reqres.in'"
+  } ],
+  "links" : [ {
+    "name" : "create user and find him",
+    "url" : "create user and find him",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5c5ac25cde8aeab1.json",
+  "parameterValues" : [ "'/api/users'", "'{\"name\": \"dows\",\"job\": \"fuuu\"}'", "'https://reqres.in'" ]
+}

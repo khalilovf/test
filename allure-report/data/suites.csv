@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 03 12:26:40 SAMT 2019","Thu Oct 03 12:26:41 SAMT 2019","1084","tests","test_smoke_suit","TestSmokeSuite","","","test_get_users_list[https://reqres.in-/api/users]",""
+"passed","Thu Oct 03 12:26:39 SAMT 2019","Thu Oct 03 12:26:39 SAMT 2019","324","tests","test_smoke_suit","TestSmokeSuite","","","test_get_one_user[https://reqres.in-/api/users-2]",""
+"skipped","Thu Oct 03 12:26:39 SAMT 2019","Thu Oct 03 12:26:40 SAMT 2019","697","tests","test_smoke_suit","TestSmokeSuite","","","test_post_create_user[https://reqres.in-/api/users-{""name"": ""dows"",""job"": ""fuuu""}]",""

@@ -1,0 +1,45 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.test_smoke_suit",
+    "children" : [ {
+      "name" : "test_get_one_user[https://reqres.in-/api/users-2]",
+      "uid" : "19db107f1aaf0d5e",
+      "parentUid" : "d173c2c991716ebf8ba62378d5b39579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570091199527,
+        "stop" : 1570091199851,
+        "duration" : 324
+      },
+      "flaky" : false,
+      "parameters" : [ "'/api/users'", "2", "'https://reqres.in'" ]
+    }, {
+      "name" : "test_post_create_user[https://reqres.in-/api/users-{\"name\": \"dows\",\"job\": \"fuuu\"}]",
+      "uid" : "5c5ac25cde8aeab1",
+      "parentUid" : "d173c2c991716ebf8ba62378d5b39579",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570091199863,
+        "stop" : 1570091200560,
+        "duration" : 697
+      },
+      "flaky" : false,
+      "parameters" : [ "'/api/users'", "'{\"name\": \"dows\",\"job\": \"fuuu\"}'", "'https://reqres.in'" ]
+    }, {
+      "name" : "test_get_users_list[https://reqres.in-/api/users]",
+      "uid" : "b41ea7dc79a3fcbc",
+      "parentUid" : "d173c2c991716ebf8ba62378d5b39579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570091200598,
+        "stop" : 1570091201682,
+        "duration" : 1084
+      },
+      "flaky" : false,
+      "parameters" : [ "'/api/users'", "'https://reqres.in'" ]
+    } ],
+    "uid" : "tests.test_smoke_suit"
+  } ]
+}

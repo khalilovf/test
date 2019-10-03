@@ -1,0 +1,68 @@
+{
+  "uid" : "b41ea7dc79a3fcbc",
+  "name" : "test_get_users_list[https://reqres.in-/api/users]",
+  "fullName" : "tests.test_smoke_suit.TestSmokeSuite#test_get_users_list",
+  "historyId" : "82b58f4b839c4c28c8fe67984b90b046",
+  "time" : {
+    "start" : 1570091200598,
+    "stop" : 1570091201682,
+    "duration" : 1084
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_smoke_suit"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSmokeSuite"
+  }, {
+    "name" : "host",
+    "value" : "nb0579"
+  }, {
+    "name" : "thread",
+    "value" : "22996-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_smoke_suit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "path",
+    "value" : "'/api/users'"
+  }, {
+    "name" : "url",
+    "value" : "'https://reqres.in'"
+  } ],
+  "links" : [ {
+    "name" : "get list of all users",
+    "url" : "get list of all users",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b41ea7dc79a3fcbc.json",
+  "parameterValues" : [ "'/api/users'", "'https://reqres.in'" ]
+}

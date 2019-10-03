@@ -1,0 +1,31 @@
+[ {
+  "uid" : "b41ea7dc79a3fcbc",
+  "name" : "test_get_users_list[https://reqres.in-/api/users]",
+  "time" : {
+    "start" : 1570091200598,
+    "stop" : 1570091201682,
+    "duration" : 1084
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "19db107f1aaf0d5e",
+  "name" : "test_get_one_user[https://reqres.in-/api/users-2]",
+  "time" : {
+    "start" : 1570091199527,
+    "stop" : 1570091199851,
+    "duration" : 324
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5c5ac25cde8aeab1",
+  "name" : "test_post_create_user[https://reqres.in-/api/users-{\"name\": \"dows\",\"job\": \"fuuu\"}]",
+  "time" : {
+    "start" : 1570091199863,
+    "stop" : 1570091200560,
+    "duration" : 697
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+} ]

@@ -1,0 +1,60 @@
+{
+  "82b58f4b839c4c28c8fe67984b90b046" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b41ea7dc79a3fcbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570091200598,
+        "stop" : 1570091201682,
+        "duration" : 1084
+      }
+    } ]
+  },
+  "1b5d5a0cbae184398f6cbed308f02024" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c5ac25cde8aeab1",
+      "status" : "skipped",
+      "statusDetails" : "AssertionError: assert '109' == None\n +  where None = <built-in method get of dict object at 0x03AFCEA0>('id')\n +    where <built-in method get of dict object at 0x03AFCEA0> = {}.get",
+      "time" : {
+        "start" : 1570091199863,
+        "stop" : 1570091200560,
+        "duration" : 697
+      }
+    } ]
+  },
+  "7ae89d2e5414d9c4eea0b5d18145368b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19db107f1aaf0d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570091199527,
+        "stop" : 1570091199851,
+        "duration" : 324
+      }
+    } ]
+  }
+}
