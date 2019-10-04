@@ -10,16 +10,21 @@ def __print_request(req):
     ))  # req toolbelt is better
 
 
-def http_sender(host, method, path, body, headers):
-    response = None
-    request = None
-    session = Session()
-
+def build_url(host, path=''):
     if path == '':
         url = host
     else:
-        url = host + path
+        if path.startswith('/'):
+            url = host + path
+        else:
+            url = host + '/' + path
+    return url
 
+
+def http_sender(host, method, path, body, headers):
+    response, request = None, None
+    session = Session()
+    url = build_url(host, path)
     try:
         request = Request(method=method, url=url, json=body, headers=headers)
         prepared = session.prepare_request(request)
